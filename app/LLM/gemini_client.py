@@ -5,6 +5,6 @@ genai.configure(api_key=GEMINI_API_KEY)
 
 model = genai.GenerativeModel("gemini-2.5-flash")
 
-def chat_with_gemini(prompt):
-    response =  model.generate_content(prompt)
-    return  response.text
+async def chat_with_gemini(prompt):
+    response = await model.generate_content_async(prompt)
+    return response.text

@@ -4,8 +4,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # ── LLM ──────────────────────────────────────────────────────────────────────
-#GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-GEMINI_API_KEY = "AIzaSyC9L38FQ3BnO40Ci-AKFXR0W6ysx-AoymQ"
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 # ── Embedding & re-ranking models (local) ────────────────────────────────────
 EMBEDDING_MODEL  = "BAAI/bge-large-en-v1.5"
